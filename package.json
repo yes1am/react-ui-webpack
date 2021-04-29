@@ -1,6 +1,6 @@
 {
   "name": "react-ui-webpack",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "lib/react-ui-webpack.min.js",
   "typings": "./types/index.d.ts",
