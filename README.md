@@ -1,6 +1,6 @@
 #  react-ui-webpack
 
-学习使用 webpack 进行打包，该包暂未发布。
+学习使用 webpack 进行 react 组件打包，该包暂未发布。
 
 ## 1. 基础
 **使用:**
