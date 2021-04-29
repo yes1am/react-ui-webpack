@@ -1,0 +1,72 @@
+{
+  "name": "react-ui-webpack",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/react-ui-webpack.min.js",
+  "typings": "./types/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "docz:serve": "docz build && docz serve",
+    "build:comp": "cross-env NODE_ENV=production webpack --progress --color --config build/webpack.prod.comp.config.js",
+    "build:main": "cross-env NODE_ENV=production webpack --progress --color --config build/webpack.prod.config.js",
+    "build:type": "tsc",
+    "build": "yarn build:comp && yarn build:main && yarn build:type"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yes1am/react-ui-webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yes1am/react-ui-webpack/issues"
+  },
+  "homepage": "https://github.com/yes1am/react-ui-webpack#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@svgr/webpack": "^5.5.0",
+    "@types/enzyme": "^3.10.8",
+    "@types/jest": "^26.0.23",
+    "@types/react": "^17.0.4",
+    "@types/react-portal": "^4.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.4",
+    "docz": "^2.3.1",
+    "enzyme": "^3.11.0",
+    "eslint": "^7.25.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "gatsby-plugin-less": "^5.4.0",
+    "jest": "^26.6.3",
+    "less": "3.8.1",
+    "less-loader": "4.1.0",
+    "mini-css-extract-plugin": "^1.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "2.3.8",
+    "typescript": "^4.2.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "react-portal": "^4.2.1"
+  }
+}
