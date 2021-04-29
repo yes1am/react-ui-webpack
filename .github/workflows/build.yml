@@ -25,11 +25,13 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: deploy                          # 发布文档
+      - name: build-doc
         if: ${{contains(github.ref, 'refs/tags/')}}
         run: |
           npm install
           npm run docz:build
+      - name: deploy                          # 发布文档
+        if: ${{contains(github.ref, 'refs/tags/')}}
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages # The branch the action should deploy to.
